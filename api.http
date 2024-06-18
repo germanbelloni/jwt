@@ -1,0 +1,19 @@
+### Home
+GET http://localhost:3008/
+
+### Ruta de Login
+POST http://localhost:3008/login
+Content-Type: application/json
+
+{
+    "username": "Gordon",
+    "password": "H@lt4ndC@tchF1r3"
+}
+
+### Ruta protegida por token
+GET http://localhost:3008/productos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdvcmRvbiIsImlhdCI6MTcxODc0NjUyMiwiZXhwIjoxNzE4NzUwMTIyfQ.FaLgVxflYLhSMxlQYCE6zd9d5OqjPleGhbWxHqBUae4
+
+### Ruta protegida por token
+GET http://localhost:3008/protected
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkdvcmRvbiIsImlhdCI6MTcxODc0NjU1NCwiZXhwIjoxNzE4NzUwMTU0fQ.Y7PsNBEbFG9qR5zArGh33hzgbQi6h7wew-ShcixnMGk
